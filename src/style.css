@@ -6,7 +6,7 @@
 
 .container {
   display: grid;
-  grid-template-columns: 10% 37.5% 5% 37.5% 10%;
+  grid-template-columns: 10% 38.5% 3% 38.5% 10%;
   grid-template-rows: auto;
   grid-template-areas:
   ". title title title ."
@@ -21,6 +21,7 @@
 }
 
 .title {
+  padding: 20px 0;
   grid-area: title;
 }
 
@@ -50,6 +51,7 @@
 button {
   margin: 5px;
   padding: 8px;
+  align-self: flex-end;
   width: max-content;
 }
 
@@ -59,5 +61,16 @@ input {
 }
 
 .dinamicTable {
-  color: red;
+  margin-top: 10px;
+  padding: 10px;
+  width: 95%;
+}
+
+.line {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.line:not(:nth-child(2n)) {
+  background-color: lightblue;
 }
