@@ -1,14 +1,14 @@
-import _ from 'lodash';
 import './style.css';
+import table from './modules/data.js';
 
-function component() {
-    const element = document.createElement('div');
-  
-    // Lodash, now imported by this script
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-    element.classList.add('hello');
-  
-    return element;
-  }
-  
-  document.body.appendChild(component())
+const tableDisplay = document.querySelector('.dinamic-table');
+tableDisplay.innerHTML = '<ul class="row"></ul>';
+tableDisplay.className = 'dinamicTable';
+
+table.forEach((user) => {
+  const line = document.createElement('li');
+  line.innerHTML = `<div>${user.name}</div><div>${user.score}</div>`;
+  line.className = 'line';
+  line.classList.add('row');
+  tableDisplay.appendChild(line);
+});

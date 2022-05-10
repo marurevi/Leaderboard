@@ -1,7 +1,76 @@
-body {
-  background-color: bisque;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.hello {
-  color: red;
+.container {
+  display: grid;
+  grid-template-columns: 10% 38.5% 3% 38.5% 10%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    ". title title title ."
+    ". col1 . col2 .";
+  align-items: center;
+  margin: 5%;
+}
+
+.container section {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  padding: 20px 0;
+  grid-area: title;
+}
+
+.col1 {
+  align-items: center;
+  grid-area: col1;
+}
+
+.col2 {
+  align-items: center;
+  grid-area: col2;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px;
+  align-self: flex-end;
+  width: max-content;
+}
+
+input {
+  padding: 5px;
+  margin: 10px;
+}
+
+.dinamicTable {
+  margin-top: 10px;
+  padding: 10px;
+  width: 95%;
+}
+
+.line {
+  margin: 5px 0;
+  padding: 5px;
+}
+
+.line:not(:nth-child(2n)) {
+  background-color: lightblue;
 }
