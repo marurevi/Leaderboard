@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
 </head>
-<body>
-    <h1>Hello webpack!</h1>
+<body class="container">
+  <section class="title"><h1>Leaderboard</h1></section>
+  <section class="col1">
+    <div class="row"><h3>Recent scores</h3><button>Refresh</button></div>
+    <div class="dinamic-table"></div>
+  </section>
+  <section class="col2">
+    <h3>Add your score</h3>
+    <form action="POST" class="column">
+      <input type="text" placeholder="Your name" name="name">
+      <input type="text" placeholder="Your score" name="score" id="">
+      <button type="submit">Submit</button>
+    </form>    
+  </section>
 </body>
 </html>
