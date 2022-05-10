@@ -1,13 +1,13 @@
 import './style.css';
-import table from './modules/data';
+import table from './modules/data.js';
 
 const tableDisplay = document.querySelector('.dinamic-table');
-tableDisplay.innerHTML= '<ul class="row"></ul>';
-tableDisplay.className= 'dinamicTable';
+tableDisplay.innerHTML = '<ul class="row"></ul>';
+tableDisplay.className = 'dinamicTable';
 
-table.forEach(user => {
+table.forEach((user) => {
   const line = document.createElement('li');
-  line.innerHTML= `<div>${user.name}</div><div>${user.score}</div>`;
+  line.innerHTML = `<div>${user.name}</div><div>${user.score}</div>`;
   line.className = 'line';
   line.classList.add('row');
   tableDisplay.appendChild(line);

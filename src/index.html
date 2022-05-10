@@ -9,14 +9,14 @@
 <body class="container">
   <section class="title"><h1>Leaderboard</h1></section>
   <section class="col1">
-    <div class="row"><h3>Recent scores</h3><button>Refresh</button></div>
+    <div class="row"><h3>Recent scores</h3><button type="button">Refresh</button></div>
     <div class="dinamic-table"></div>
   </section>
   <section class="col2">
     <h3>Add your score</h3>
     <form action="POST" class="column">
-      <input type="text" placeholder="Your name" name="name">
-      <input type="text" placeholder="Your score" name="score" id="">
+      <input type="text" placeholder="Your name" name="name" id="name-input">
+      <input type="text" placeholder="Your score" name="score" id="score-input">
       <button type="submit">Submit</button>
     </form>    
   </section>
