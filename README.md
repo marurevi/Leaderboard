@@ -1,12 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Leaderboard: Setup Project
+# Leaderboard: hit the API
 
 > The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service.
 
 ![leaderboard_wireframe](https://user-images.githubusercontent.com/92180054/167676270-71206b20-8056-430b-a772-072bff20320f.png)
 
-> In this activity you will set up a JavaScript project for the Leaderboard list app, using webpack and ES6 features, notably modules. You should develop a first working version of the app following a wireframe, but without styling - just focus on functionality. In following activities, you will consume the Leaderboard API using JavaScript async and await and add some styling.
+> In this activity I continue working on the Leaderboard list app, sending and receiving data from/to the Leaderboard API.
 
 
 ## Built With
@@ -68,8 +68,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
+- Microverse
 - etc
 
 ## 📝 License
