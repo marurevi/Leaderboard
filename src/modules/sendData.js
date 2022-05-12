@@ -1,8 +1,12 @@
+import urlAPI from './url.js';
+
+const ID = localStorage.getItem('keyID');
+const URL = `${urlAPI + ID}/scores/`;
+
 const nameInput = document.getElementById('name-input');
 const scoreInput = document.getElementById('score-input');
 
 const saveData = async () => {
-  const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/sN1XA4iUm9JzCAVPL1P5/scores/';
   if (nameInput.value !== '' && scoreInput.value !== '') {
     fetch(URL, {
       method: 'POST',
