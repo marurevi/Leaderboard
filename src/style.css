@@ -7,8 +7,7 @@
 }
 
 body {
-background-color: rgb(43, 43, 43);
-
+  background-color: rgb(43, 43, 43);
 }
 
 .container {
@@ -33,14 +32,15 @@ background-color: rgb(43, 43, 43);
 }
 
 .title {
-  padding: 20px 0;  
+  padding: 20px 0;
   grid-area: title;
   margin-bottom: 40px;
 }
+
 .title h1 {
   font-family: 'Monoton', cursive;
   padding: 20px 10px;
-  font-size:xx-large;
+  font-size: xx-large;
   font-weight: 400;
   border-top-left-radius: 35px;
   border-bottom-right-radius: 35px;
@@ -103,6 +103,7 @@ input {
   width: 95%;
   height: 100px;
 }
+
 /* width */
 .dinamicTable::-webkit-scrollbar {
   width: 10px;
@@ -111,19 +112,19 @@ input {
 
 /* Track */
 .dinamicTable::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px rgb(182, 184, 183); 
+  box-shadow: inset 0 0 5px rgb(182, 184, 183);
   border-radius: 10px;
 }
- 
+
 /* Handle */
 .dinamicTable::-webkit-scrollbar-thumb {
-  background: rgb(4, 126, 153); 
+  background: rgb(4, 126, 153);
   border-radius: 10px;
 }
 
 /* Handle on hover */
 .dinamicTable::-webkit-scrollbar-thumb:hover {
-  background: #00656a; 
+  background: #00656a;
 }
 
 .line {
