@@ -1,5 +1,5 @@
 const urlAPI = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
-let ID = 'DIEeBnVnK9daqte6ChhC';
+let ID = 'o3g6HKPKQaXnaj3JS16M';
 let URL = `${urlAPI + ID}/scores/`;
 
 const changeID = async () => {
