@@ -17,7 +17,7 @@
 
 ## Live Demo (if available)
 
-[Live Demo](https://marurevi.github.io/Leaderboard/)
+[Live Demo](https://marurevi.github.io/Leaderboard/dist/index.html)
 
 ## Getting Started
 
